@@ -3,12 +3,12 @@
 把几个免费节点源自动合并成**一条自己的订阅链接**，每 6 小时由 GitHub Actions 自动更新。
 安卓 / iPhone / PC / 软路由 全部吃这一条链接。
 
-## 订阅地址（推到自己仓库后，把 OWNER/REPO 换成自己的）
+## 订阅地址
 
 | 格式 | 地址 | 给谁用 |
 |---|---|---|
-| 通用订阅 | `https://fastly.jsdelivr.net/gh/OWNER/REPO@main/sub/all.txt` | v2rayNG、Streisand、Hiddify、Shadowrocket |
-| Clash 配置 | `https://fastly.jsdelivr.net/gh/OWNER/REPO@main/sub/clash.yaml` | Clash Verge Rev、FlClash、软路由 mihomo |
+| 通用订阅 | `https://fastly.jsdelivr.net/gh/lorddidi/subpool@main/sub/all.txt` | v2rayNG、Streisand、Hiddify、Shadowrocket |
+| Clash 配置 | `https://fastly.jsdelivr.net/gh/lorddidi/subpool@main/sub/clash.yaml` | Clash Verge Rev、FlClash、软路由 mihomo |
 
 jsDelivr 在国内偶尔抽风，备用镜像：把 `fastly.jsdelivr.net` 换成 `cdn.jsdelivr.net` 或前面加 `https://gh-proxy.com/`。
 
