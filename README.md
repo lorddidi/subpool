@@ -7,10 +7,10 @@
 
 | 格式 | 地址 | 给谁用 |
 |---|---|---|
-| 通用订阅 | `https://fastly.jsdelivr.net/gh/lorddidi/subpool@main/sub/all.txt` | v2rayNG、Streisand、Hiddify、Shadowrocket |
-| Clash 配置 | `https://fastly.jsdelivr.net/gh/lorddidi/subpool@main/sub/clash.yaml` | Clash Verge Rev、FlClash、软路由 mihomo |
+| 通用订阅 | `https://cdn.jsdelivr.net/gh/lorddidi/subpool@main/sub/all.txt` | v2rayNG、Streisand、Hiddify、Shadowrocket |
+| Clash 配置 | `https://cdn.jsdelivr.net/gh/lorddidi/subpool@main/sub/clash.yaml` | Clash Verge Rev、FlClash、软路由 mihomo |
 
-jsDelivr 在国内偶尔抽风，备用镜像：把 `fastly.jsdelivr.net` 换成 `cdn.jsdelivr.net` 或前面加 `https://gh-proxy.com/`。
+jsDelivr 国内线路偶发抽风：备用镜像把 `cdn.jsdelivr.net` 换成 `fastly.jsdelivr.net`（小文件更快），或整个前面加 `https://gh-proxy.com/`（把域名换成 raw.githubusercontent.com/lorddidi/subpool/main/...）。
 
 ## 各端怎么接
 
