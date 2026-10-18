@@ -21,7 +21,7 @@ import urllib.parse
 import urllib.request
 
 ROOT = pathlib.Path(__file__).parent
-MAX_NODES = 400          # 总节点上限（免费源动辄几千个，客户端吃不下）
+MAX_NODES = 150          # 总节点上限（免费源动辄几千个，客户端吃不下；文件越小手机导入越稳）
 MAX_BYTES = 6_000_000    # 单源下载上限（有的源 15MB，取前 6MB 已经上千个节点了）
 SUPPORTED = ("ss://", "vmess://", "vless://", "trojan://", "hysteria2://")
 
