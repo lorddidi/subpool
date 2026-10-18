@@ -16,12 +16,18 @@ import base64
 import json
 import pathlib
 import re
+import socket
+import ssl
 import sys
 import urllib.parse
 import urllib.request
+from concurrent.futures import ThreadPoolExecutor
 
 ROOT = pathlib.Path(__file__).parent
-MAX_NODES = 150          # 总节点上限（免费源动辄几千个，客户端吃不下；文件越小手机导入越稳）
+MAX_NODES = 150          # 最终保留的节点上限（文件越小手机导入越稳）
+MAX_CANDIDATES = 600     # 先多收候选，验证连通性后只留能连上的
+TEST_TIMEOUT = 3         # 单节点 TCP/TLS 测试超时（秒）
+TEST_WORKERS = 32        # 并发测试线程数
 MAX_BYTES = 6_000_000    # 单源下载上限（有的源 15MB，取前 6MB 已经上千个节点了）
 SUPPORTED = ("ss://", "vmess://", "vless://", "trojan://", "hysteria2://")
 
@@ -288,6 +294,49 @@ def dedup_key(clash):
     return (clash["type"], clash["server"], clash["port"], cred)
 
 
+# ---------- 连通性验证（TCP 必连；带 TLS 的再做 TLS 握手） ----------
+
+def test_node(clash):
+    if clash["type"] == "hysteria2":   # UDP 协议，TCP 测不了，放行
+        return True
+    host, port = clash["server"], clash["port"]
+    try:
+        s = socket.create_connection((host, port), timeout=TEST_TIMEOUT)
+    except Exception:  # noqa: BLE001
+        return False
+    try:
+        need_tls = bool(clash.get("tls")) or clash["type"] == "trojan"
+        if need_tls:
+            ctx = ssl.create_default_context()
+            ctx.check_hostname = False
+            ctx.verify_mode = ssl.CERT_NONE
+            sni = clash.get("servername") or clash.get("sni") or host
+            s = ctx.wrap_socket(s, server_hostname=sni)
+    except Exception:  # noqa: BLE001
+        return False
+    finally:
+        try:
+            s.close()
+        except Exception:  # noqa: BLE001
+            pass
+    return True
+
+
+def validate(nodes):
+    """my_nodes 不测直接保留；其余并发测试，只留连通的。"""
+    mine = [n for n in nodes if n["mine"]]
+    pool = [n for n in nodes if not n["mine"]]
+    with ThreadPoolExecutor(max_workers=TEST_WORKERS) as ex:
+        results = list(ex.map(lambda n: test_node(n["clash"]), pool))
+    passed = [n for n, ok in zip(pool, results) if ok]
+    log(f"[test] 候选 {len(pool)} 个，连通 {len(passed)} 个")
+    final = mine + passed
+    if len(final) < 20:  # 极端情况（runner 网络异常）：补未验证的，避免发布空订阅
+        log("[warn] 连通节点过少，补入未验证节点兜底")
+        final += [n for n in pool if n not in passed]
+    return final[:MAX_NODES]
+
+
 # ---------- YAML 输出（手写 emitter，避免第三方依赖） ----------
 
 def yq(v):
@@ -350,7 +399,7 @@ def main():
     seen = set()
 
     def add(raw, mine=False):
-        if len(nodes) >= MAX_NODES:
+        if len(nodes) >= MAX_CANDIDATES:
             return False
         clash = parse_line(raw)
         if not clash:
@@ -368,16 +417,19 @@ def main():
 
     # 免费源
     for url in sources:
-        if len(nodes) >= MAX_NODES:
+        if len(nodes) >= MAX_CANDIDATES:
             break
         text = fetch(url)
         got = 0
         for l in parse_source(text):
             if add(l):
                 got += 1
-            if len(nodes) >= MAX_NODES:
+            if len(nodes) >= MAX_CANDIDATES:
                 break
-        log(f"[ok] {url} -> 新增 {got}（累计 {len(nodes)}）")
+        log(f"[ok] {url} -> 候选 +{got}（累计 {len(nodes)}）")
+
+    # 验证连通性，只保留可用节点
+    nodes = validate(nodes)
 
     # 名字去重（clash 里重名会互相覆盖）
     names = {}
