@@ -22,30 +22,36 @@ import urllib.request
 
 ROOT = pathlib.Path(__file__).parent
 MAX_NODES = 400          # 总节点上限（免费源动辄几千个，客户端吃不下）
+MAX_BYTES = 6_000_000    # 单源下载上限（有的源 15MB，取前 6MB 已经上千个节点了）
 SUPPORTED = ("ss://", "vmess://", "vless://", "trojan://", "hysteria2://")
 
 UA = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64)"}
 
 
+def log(msg):
+    print(msg, flush=True)
+
+
 # ---------- 抓取 ----------
 
 def fetch(url):
-    """raw.githubusercontent 优先，失败换 jsDelivr / gh-proxy 镜像。"""
-    cands = [url]
+    """GitHub 源优先走 jsDelivr / gh-proxy 镜像（国内外都快），raw 兜底。"""
+    cands = []
     m = re.match(r"https://raw\.githubusercontent\.com/([^/]+)/([^/]+)/([^/]+)/(.*)", url)
     if m:
         owner, repo, ref, path = m.groups()
         cands.append(f"https://cdn.jsdelivr.net/gh/{owner}/{repo}@{ref}/{path}")
         cands.append(f"https://gh-proxy.com/{url}")
+    cands.append(url)
     last_err = None
     for u in cands:
         try:
             req = urllib.request.Request(u, headers=UA)
-            with urllib.request.urlopen(req, timeout=120) as r:
-                return r.read().decode("utf-8", "replace")
+            with urllib.request.urlopen(req, timeout=45) as r:
+                return r.read(MAX_BYTES).decode("utf-8", "replace")
         except Exception as e:  # noqa: BLE001
             last_err = e
-    print(f"[warn] 抓取失败 {url}: {last_err}", file=sys.stderr)
+    log(f"[warn] 抓取失败 {url}: {last_err}")
     return ""
 
 
@@ -362,6 +368,8 @@ def main():
 
     # 免费源
     for url in sources:
+        if len(nodes) >= MAX_NODES:
+            break
         text = fetch(url)
         got = 0
         for l in parse_source(text):
@@ -369,7 +377,7 @@ def main():
                 got += 1
             if len(nodes) >= MAX_NODES:
                 break
-        print(f"[ok] {url} -> 新增 {got}（累计 {len(nodes)}）")
+        log(f"[ok] {url} -> 新增 {got}（累计 {len(nodes)}）")
 
     # 名字去重（clash 里重名会互相覆盖）
     names = {}
@@ -412,7 +420,7 @@ def main():
     }
     (outdir / "clash.yaml").write_text(ydump(cfg) + "\n", "utf-8")
 
-    print(f"[done] 共 {len(nodes)} 个节点 -> sub/all.txt, sub/clash.yaml")
+    log(f"[done] 共 {len(nodes)} 个节点 -> sub/all.txt, sub/clash.yaml")
 
 
 if __name__ == "__main__":
