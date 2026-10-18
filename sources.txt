@@ -1,0 +1,8 @@
+# 每行一个订阅 URL（base64 或明文分享链接都支持），# 开头是注释。
+# 想加/删源，直接改这个文件，推到 GitHub 后 Actions 会自动生效。
+
+# 每小时刷新，带节点存活验证（Clash / sing-box / v2ray 通用）
+https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/v2ray-base64.txt
+
+# 每 3 小时从免费机场页面抓取
+https://raw.githubusercontent.com/xiaoji235/airport-free/main/v2ray.txt

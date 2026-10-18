@@ -1,0 +1,23 @@
+name: update
+on:
+  schedule:
+    - cron: "0 */6 * * *"   # 每 6 小时自动跑一次
+  workflow_dispatch:        # 也可以在网页上手动点一下 Run workflow
+
+jobs:
+  merge:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: python merge.py
+      - run: |
+          git config user.name "subpool-bot"
+          git config user.email "subpool-bot@users.noreply.github.com"
+          git add -A sub
+          git diff --cached --quiet || git commit -m "update $(date -u '+%F %H:%M') UTC"
+          git push
