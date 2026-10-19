@@ -3,6 +3,216 @@ allow-lan: true
 mode: "rule"
 log-level: "info"
 proxies:
+  - name: "CF电信优选1"
+    type: "vless"
+    server: "104.17.159.156"
+    port: 443
+    uuid: "/1679109c-d669-4045-8d34-17e2a2bcb807"
+    udp: true
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "edt.dichen.us.ci"
+    tls: true
+    servername: "edt.dichen.us.ci"
+    skip-cert-verify: true
+  - name: "CF电信优选2"
+    type: "vless"
+    server: "104.17.157.155"
+    port: 8443
+    uuid: "/1679109c-d669-4045-8d34-17e2a2bcb807"
+    udp: true
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "edt.dichen.us.ci"
+    tls: true
+    servername: "edt.dichen.us.ci"
+    skip-cert-verify: true
+  - name: "CF电信优选3"
+    type: "vless"
+    server: "104.17.157.84"
+    port: 443
+    uuid: "/1679109c-d669-4045-8d34-17e2a2bcb807"
+    udp: true
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "edt.dichen.us.ci"
+    tls: true
+    servername: "edt.dichen.us.ci"
+    skip-cert-verify: true
+  - name: "CF电信优选4"
+    type: "vless"
+    server: "8.35.211.44"
+    port: 2053
+    uuid: "/1679109c-d669-4045-8d34-17e2a2bcb807"
+    udp: true
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "edt.dichen.us.ci"
+    tls: true
+    servername: "edt.dichen.us.ci"
+    skip-cert-verify: true
+  - name: "CF电信优选5"
+    type: "vless"
+    server: "104.17.151.235"
+    port: 2096
+    uuid: "/1679109c-d669-4045-8d34-17e2a2bcb807"
+    udp: true
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "edt.dichen.us.ci"
+    tls: true
+    servername: "edt.dichen.us.ci"
+    skip-cert-verify: true
+  - name: "CF电信优选6"
+    type: "vless"
+    server: "188.164.248.153"
+    port: 443
+    uuid: "/1679109c-d669-4045-8d34-17e2a2bcb807"
+    udp: true
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "edt.dichen.us.ci"
+    tls: true
+    servername: "edt.dichen.us.ci"
+    skip-cert-verify: true
+  - name: "CF电信优选7"
+    type: "vless"
+    server: "104.18.33.107"
+    port: 2096
+    uuid: "/1679109c-d669-4045-8d34-17e2a2bcb807"
+    udp: true
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "edt.dichen.us.ci"
+    tls: true
+    servername: "edt.dichen.us.ci"
+    skip-cert-verify: true
+  - name: "CF电信优选8"
+    type: "vless"
+    server: "104.18.33.196"
+    port: 8443
+    uuid: "/1679109c-d669-4045-8d34-17e2a2bcb807"
+    udp: true
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "edt.dichen.us.ci"
+    tls: true
+    servername: "edt.dichen.us.ci"
+    skip-cert-verify: true
+  - name: "CF电信优选9"
+    type: "vless"
+    server: "104.18.33.72"
+    port: 8443
+    uuid: "/1679109c-d669-4045-8d34-17e2a2bcb807"
+    udp: true
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "edt.dichen.us.ci"
+    tls: true
+    servername: "edt.dichen.us.ci"
+    skip-cert-verify: true
+  - name: "CF电信优选10"
+    type: "vless"
+    server: "8.35.211.121"
+    port: 2096
+    uuid: "/1679109c-d669-4045-8d34-17e2a2bcb807"
+    udp: true
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "edt.dichen.us.ci"
+    tls: true
+    servername: "edt.dichen.us.ci"
+    skip-cert-verify: true
+  - name: "CF电信优选11"
+    type: "vless"
+    server: "104.17.156.210"
+    port: 2083
+    uuid: "/1679109c-d669-4045-8d34-17e2a2bcb807"
+    udp: true
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "edt.dichen.us.ci"
+    tls: true
+    servername: "edt.dichen.us.ci"
+    skip-cert-verify: true
+  - name: "CF电信优选12"
+    type: "vless"
+    server: "8.35.211.162"
+    port: 2053
+    uuid: "/1679109c-d669-4045-8d34-17e2a2bcb807"
+    udp: true
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "edt.dichen.us.ci"
+    tls: true
+    servername: "edt.dichen.us.ci"
+    skip-cert-verify: true
+  - name: "CF电信优选13"
+    type: "vless"
+    server: "8.35.211.217"
+    port: 2096
+    uuid: "/1679109c-d669-4045-8d34-17e2a2bcb807"
+    udp: true
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "edt.dichen.us.ci"
+    tls: true
+    servername: "edt.dichen.us.ci"
+    skip-cert-verify: true
+  - name: "CF电信优选15"
+    type: "vless"
+    server: "8.35.211.175"
+    port: 2053
+    uuid: "/1679109c-d669-4045-8d34-17e2a2bcb807"
+    udp: true
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "edt.dichen.us.ci"
+    tls: true
+    servername: "edt.dichen.us.ci"
+    skip-cert-verify: true
+  - name: "CF电信优选16"
+    type: "vless"
+    server: "104.17.145.198"
+    port: 2087
+    uuid: "/1679109c-d669-4045-8d34-17e2a2bcb807"
+    udp: true
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "edt.dichen.us.ci"
+    tls: true
+    servername: "edt.dichen.us.ci"
+    skip-cert-verify: true
   - name: "trojan-1827149167"
     type: "trojan"
     server: "139.180.146.200"
@@ -24,19 +234,19 @@ proxies:
     short-id: ""
     skip-cert-verify: true
     flow: "xtls-rprx-vision"
-  - name: "vless-1863464818"
+  - name: "vless-1853331571"
     type: "vless"
-    server: "104.18.42.98"
+    server: "104.18.43.174"
     port: 443
-    uuid: "/4e4f1f70-5e56-4a76-bb9d-db087f4690c4"
+    uuid: "/e6df2095-a73c-4043-8693-8d5a03686870"
     udp: true
     network: "ws"
     ws-opts:
-      path: "/tyxyws"
+      path: "/"
       headers:
-        Host: "jp3.yohototo.top"
+        Host: "lucasjow.us.ci"
     tls: true
-    servername: "jp3.yohototo.top"
+    servername: "lucasjow.us.ci"
     skip-cert-verify: true
   - name: "vless-1870278559"
     type: "vless"
@@ -173,31 +383,6 @@ proxies:
     tls: true
     servername: "league-stats.russsport.life"
     skip-cert-verify: true
-  - name: "vless-1854304772"
-    type: "vless"
-    server: "pl.golangwikito.cfd"
-    port: 443
-    uuid: "/f8d52ece-fad4-478d-875d-df6eed3befa7"
-    udp: true
-    reality: true
-    tls: true
-    servername: "pl.golangwikito.cfd"
-    public-key: "DsTVLCehsKvfFGtNZU5leKOLTlEp28qeifHYtRKOFwg"
-    short-id: "f8b695e5c59d028c"
-    skip-cert-verify: true
-    flow: "xtls-rprx-vision"
-  - name: "trojan-1827529903"
-    type: "trojan"
-    server: "104.17.44.17"
-    port: 443
-    password: "/humanity"
-    sni: "www.pleadcourt.org"
-    skip-cert-verify: true
-    udp: true
-    network: "ws"
-    ws-opts:
-      path: "/"
-      headers: {}
   - name: "vless-1853341823"
     type: "vless"
     server: "189.24.82.195"
@@ -231,6 +416,21 @@ proxies:
     servername: "itunes.apple.com"
     public-key: "iJDZHJQcTGl2VIwbsRmlOG9JGbbmxNY5wmv1hc6OwQM"
     short-id: "c31176b6"
+    skip-cert-verify: true
+  - name: "vless-1870020729"
+    type: "vless"
+    server: "157.22.241.124"
+    port: 8456
+    uuid: "/a346c521-7a7f-452b-9356-a4893feb5982"
+    udp: true
+    network: "grpc"
+    grpc-opts:
+      grpc-service-name: "GunService"
+    reality: true
+    tls: true
+    servername: "github.com"
+    public-key: "FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0"
+    short-id: "457fab2ac885dbe0"
     skip-cert-verify: true
   - name: "vless-1832980516"
     type: "vless"
@@ -295,18 +495,6 @@ proxies:
     ws-opts:
       path: "/"
       headers: {}
-  - name: "trojan-1827731540"
-    type: "trojan"
-    server: "188.114.97.1"
-    port: 443
-    password: "/humanity"
-    sni: "www.pleadcourt.org"
-    skip-cert-verify: true
-    udp: true
-    network: "ws"
-    ws-opts:
-      path: "/"
-      headers: {}
   - name: "trojan-1856630636"
     type: "trojan"
     server: "167.82.64.46"
@@ -347,40 +535,14 @@ proxies:
     ws-opts:
       path: "/"
       headers: {}
-  - name: "trojan-1833552500"
+  - name: "trojan-1832863498"
     type: "trojan"
-    server: "141.101.115.104"
-    port: 443
-    password: "/humanity"
-    sni: "www.calmlunch.com"
+    server: "45.32.52.173"
+    port: 8886
+    password: "/e26a229d-e8f2-4ff9-8c7d-58a9d83ee437"
+    sni: "45.32.52.173"
     skip-cert-verify: true
     udp: true
-    network: "ws"
-    ws-opts:
-      path: "/"
-      headers: {}
-  - name: "vless-1854025191"
-    type: "vless"
-    server: "platform109.golnamakcert.top"
-    port: 80
-    uuid: "/e13cf851-b4fd-413b-8d49-146e6eb8e5d4"
-    udp: true
-    network: "ws"
-    ws-opts:
-      path: "/platform109"
-      headers:
-        Host: "['platform109.halalkhor.info']"
-  - name: "vless-1832807752"
-    type: "vless"
-    server: "platform106.golnamakcert.top"
-    port: 80
-    uuid: "/e13cf851-b4fd-413b-8d49-146e6eb8e5d4"
-    udp: true
-    network: "ws"
-    ws-opts:
-      path: "/platform106"
-      headers:
-        Host: "platform106.halalkhor.info"
   - name: "vless-1837968937"
     type: "vless"
     server: "funagfrdfs.alixxplay.com"
@@ -394,20 +556,6 @@ proxies:
     short-id: "aae6d935"
     skip-cert-verify: true
     flow: "xtls-rprx-vision"
-  - name: "vless-1856044880"
-    type: "vless"
-    server: "104.21.71.249"
-    port: 443
-    uuid: "/e6df2095-a73c-4043-8693-8d5a03686870"
-    udp: true
-    network: "ws"
-    ws-opts:
-      path: "/cart/docs/www/proxyip=108.160.132.132"
-      headers:
-        Host: "lucasjow.us.ci"
-    tls: true
-    servername: "lucasjow.us.ci"
-    skip-cert-verify: true
   - name: "vless-1832974452"
     type: "vless"
     server: "funagfrdfs.alixxplay.com"
@@ -863,20 +1011,6 @@ proxies:
     skip-cert-verify: true
   - name: "FR法國丨yoyapai.com #5"
     type: "vless"
-    server: "cf.877774.xyz"
-    port: 443
-    uuid: "/eeb6823c-b926-4ea2-866a-5542edd26e59"
-    udp: true
-    network: "ws"
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "t1s1.rittbo.kdns.fr"
-    tls: true
-    servername: "t1s1.rittbo.kdns.fr"
-    skip-cert-verify: true
-  - name: "FR法國丨yoyapai.com #6"
-    type: "vless"
     server: "store.ubi.com"
     port: 443
     uuid: "/eeb6823c-b926-4ea2-866a-5542edd26e59"
@@ -951,6 +1085,15 @@ proxies:
     servername: "download.nvidia.com"
     public-key: "D2SXHZRRYM0WcFChGWd57XB-U73aIsGfMpe2-Gq5XSs"
     short-id: ""
+    skip-cert-verify: true
+  - name: "🇮🇷_IR伊朗丨yoyapai.com"
+    type: "vless"
+    server: "217.60.193.1"
+    port: 443
+    uuid: "/5c192fd7-ef98-4112-a20c-129108fcd7e9"
+    udp: true
+    tls: true
+    servername: "ddc-akn.astralweb.tech"
     skip-cert-verify: true
   - name: "🇺🇸_US美國丨yoyapai.com"
     type: "vless"
@@ -1258,47 +1401,28 @@ proxies:
       path: "/"
       headers:
         Host: "vms.lifetime55.workers.dev"
-  - name: "🇩🇪DE德国丨yoyapai.com"
-    type: "vless"
-    server: "217.163.76.118"
-    port: 2086
-    uuid: "/b7977b65-cfd8-4db9-a029-6ef014a4ae4a"
-    udp: true
-    network: "xhttp"
-  - name: "🇸🇬SG新加坡丨yoyapai.com #1"
-    type: "vless"
-    server: "154.196.139.50"
-    port: 443
-    uuid: "/423b1d79-08c4-403f-9d5e-c541f791b55f"
-    udp: true
-    reality: true
-    tls: true
-    servername: "asia.cendora.ru"
-    public-key: "eaRNeC8fccrx0nBNvBpAXZgK4m4FxfnQ-t0W7NOM7mU"
-    short-id: "e53048e82bb20077"
-    skip-cert-verify: true
-    flow: "xtls-rprx-vision"
-  - name: "🇫🇮FI芬兰丨yoyapai.com"
-    type: "vless"
-    server: "65.109.12.58"
-    port: 2053
-    uuid: "/c7e9c591-2764-423a-afca-efbd010fd396"
-    udp: true
-    network: "ws"
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "forfreeuse.rtqa.ru"
-    tls: true
-    servername: "forfreeuse.rtqa.ru"
-    skip-cert-verify: true
 proxy-groups:
   - name: "自动选择"
     type: "url-test"
     proxies:
+      - "CF电信优选1"
+      - "CF电信优选2"
+      - "CF电信优选3"
+      - "CF电信优选4"
+      - "CF电信优选5"
+      - "CF电信优选6"
+      - "CF电信优选7"
+      - "CF电信优选8"
+      - "CF电信优选9"
+      - "CF电信优选10"
+      - "CF电信优选11"
+      - "CF电信优选12"
+      - "CF电信优选13"
+      - "CF电信优选15"
+      - "CF电信优选16"
       - "trojan-1827149167"
       - "vless-1827163685"
-      - "vless-1863464818"
+      - "vless-1853331571"
       - "vless-1870278559"
       - "vless-1870636089"
       - "vless-1869118835"
@@ -1309,10 +1433,9 @@ proxy-groups:
       - "vless-1827156366"
       - "vless-1862570257"
       - "vless-1869479913"
-      - "vless-1854304772"
-      - "trojan-1827529903"
       - "vless-1853341823"
       - "vless-1827150497"
+      - "vless-1870020729"
       - "vless-1832980516"
       - "trojan-1853493444"
       - "trojan-1827148049"
@@ -1320,16 +1443,12 @@ proxy-groups:
       - "trojan-1853456484"
       - "trojan-1827147881"
       - "trojan-1836143346"
-      - "trojan-1827731540"
       - "trojan-1856630636"
       - "trojan-1853493435"
       - "trojan-1854015180"
       - "trojan-1869386355"
-      - "trojan-1833552500"
-      - "vless-1854025191"
-      - "vless-1832807752"
+      - "trojan-1832863498"
       - "vless-1837968937"
-      - "vless-1856044880"
       - "vless-1832974452"
       - "vless-1853969397"
       - "vless-1827975827"
@@ -1366,12 +1485,12 @@ proxy-groups:
       - "FR法國丨yoyapai.com #4"
       - "CA加拿大丨yoyapai.com"
       - "FR法國丨yoyapai.com #5"
-      - "FR法國丨yoyapai.com #6"
       - "🇺🇸US美國丨yoyapai.com #6"
       - "美國節點丨yoyapai.com"
       - "🇺🇦烏克蘭丨yoyapai.com"
       - "🇩🇪德國丨yoyapai.com"
       - "🇹🇷土耳其丨yoyapai.com"
+      - "🇮🇷_IR伊朗丨yoyapai.com"
       - "🇺🇸_US美國丨yoyapai.com"
       - "🇯🇵JP日本丨yoyapai.com"
       - "🇳🇱 荷蘭丨yoyapai.com"
@@ -1400,18 +1519,30 @@ proxy-groups:
       - "❓未知丨yoyapai.com #4"
       - "🇸🇬SG新加坡丨yoyapai.com"
       - "❓未知丨yoyapai.com #5"
-      - "🇩🇪DE德国丨yoyapai.com"
-      - "🇸🇬SG新加坡丨yoyapai.com #1"
-      - "🇫🇮FI芬兰丨yoyapai.com"
     url: "https://www.gstatic.com/generate_204"
     interval: 300
   - name: "节点选择"
     type: "select"
     proxies:
       - "自动选择"
+      - "CF电信优选1"
+      - "CF电信优选2"
+      - "CF电信优选3"
+      - "CF电信优选4"
+      - "CF电信优选5"
+      - "CF电信优选6"
+      - "CF电信优选7"
+      - "CF电信优选8"
+      - "CF电信优选9"
+      - "CF电信优选10"
+      - "CF电信优选11"
+      - "CF电信优选12"
+      - "CF电信优选13"
+      - "CF电信优选15"
+      - "CF电信优选16"
       - "trojan-1827149167"
       - "vless-1827163685"
-      - "vless-1863464818"
+      - "vless-1853331571"
       - "vless-1870278559"
       - "vless-1870636089"
       - "vless-1869118835"
@@ -1422,10 +1553,9 @@ proxy-groups:
       - "vless-1827156366"
       - "vless-1862570257"
       - "vless-1869479913"
-      - "vless-1854304772"
-      - "trojan-1827529903"
       - "vless-1853341823"
       - "vless-1827150497"
+      - "vless-1870020729"
       - "vless-1832980516"
       - "trojan-1853493444"
       - "trojan-1827148049"
@@ -1433,16 +1563,12 @@ proxy-groups:
       - "trojan-1853456484"
       - "trojan-1827147881"
       - "trojan-1836143346"
-      - "trojan-1827731540"
       - "trojan-1856630636"
       - "trojan-1853493435"
       - "trojan-1854015180"
       - "trojan-1869386355"
-      - "trojan-1833552500"
-      - "vless-1854025191"
-      - "vless-1832807752"
+      - "trojan-1832863498"
       - "vless-1837968937"
-      - "vless-1856044880"
       - "vless-1832974452"
       - "vless-1853969397"
       - "vless-1827975827"
@@ -1479,12 +1605,12 @@ proxy-groups:
       - "FR法國丨yoyapai.com #4"
       - "CA加拿大丨yoyapai.com"
       - "FR法國丨yoyapai.com #5"
-      - "FR法國丨yoyapai.com #6"
       - "🇺🇸US美國丨yoyapai.com #6"
       - "美國節點丨yoyapai.com"
       - "🇺🇦烏克蘭丨yoyapai.com"
       - "🇩🇪德國丨yoyapai.com"
       - "🇹🇷土耳其丨yoyapai.com"
+      - "🇮🇷_IR伊朗丨yoyapai.com"
       - "🇺🇸_US美國丨yoyapai.com"
       - "🇯🇵JP日本丨yoyapai.com"
       - "🇳🇱 荷蘭丨yoyapai.com"
@@ -1513,9 +1639,6 @@ proxy-groups:
       - "❓未知丨yoyapai.com #4"
       - "🇸🇬SG新加坡丨yoyapai.com"
       - "❓未知丨yoyapai.com #5"
-      - "🇩🇪DE德国丨yoyapai.com"
-      - "🇸🇬SG新加坡丨yoyapai.com #1"
-      - "🇫🇮FI芬兰丨yoyapai.com"
       - "DIRECT"
 rules:
   - "GEOSITE,private,DIRECT"
