@@ -3,23 +3,30 @@ allow-lan: true
 mode: "rule"
 log-level: "info"
 proxies:
-  - name: "vless-1827152266"
-    type: "vless"
-    server: "154.29.145.196"
-    port: 443
-    uuid: "/62fdae06-6692-4b79-8f34-470784e55fd6"
-    udp: true
-    network: "ws"
-    ws-opts:
-      path: "/ws"
-      headers:
-        Host: "itunes.apple.com"
-    reality: true
-    tls: true
-    servername: "itunes.apple.com"
-    public-key: "h6EW_Y5nW9PRypxaOrSOyiHZDR-kuNfdoy24inGOoB0"
-    short-id: "33b15a3e"
+  - name: "trojan-1832863498"
+    type: "trojan"
+    server: "45.32.52.173"
+    port: 8886
+    password: "/e26a229d-e8f2-4ff9-8c7d-58a9d83ee437"
+    sni: "45.32.52.173"
     skip-cert-verify: true
+    udp: true
+  - name: "trojan-1828295227"
+    type: "trojan"
+    server: "139.180.146.200"
+    port: 8886
+    password: "/e26a229d-e8f2-4ff9-8c7d-58a9d83ee437"
+    sni: "139.180.146.200"
+    skip-cert-verify: true
+    udp: true
+  - name: "trojan-1853338708"
+    type: "trojan"
+    server: "47.250.84.25"
+    port: 443
+    password: "/5931134d1cde66bf83a54acdfebe7ab2"
+    sni: "47.250.84.25"
+    skip-cert-verify: true
+    udp: true
   - name: "trojan-1864903307"
     type: "trojan"
     server: "4c2d5151.266nets.com"
@@ -28,15 +35,15 @@ proxies:
     sni: "ixigua.com"
     skip-cert-verify: true
     udp: true
-  - name: "vless-1863067659"
+  - name: "vless-1853331624"
     type: "vless"
-    server: "172.67.155.65"
-    port: 8443
+    server: "104.18.43.174"
+    port: 443
     uuid: "/e6df2095-a73c-4043-8693-8d5a03686870"
     udp: true
     network: "ws"
     ws-opts:
-      path: "/DailyConfigs---DailyConfigs---DailyConfigs?ed=1024"
+      path: "/cart/docs/www/proxyip"
       headers:
         Host: "lucasjow.us.ci"
     tls: true
@@ -59,19 +66,11 @@ proxies:
     public-key: "6l-Yq_zkVrnExw8AVv85VwoYnfNc8-dRSpoj_AA-fxY"
     short-id: "c5cde18f"
     skip-cert-verify: true
-  - name: "trojan-1853493434"
-    type: "trojan"
-    server: "4c2d5151.266nets.com"
-    port: 12019
-    password: "/bad06c3525a6eaee1757b34776b83892"
-    sni: "ixigua.com"
-    skip-cert-verify: true
-    udp: true
-  - name: "vless-1828526732"
+  - name: "vless-1835128666"
     type: "vless"
-    server: "144.202.126.147"
+    server: "45.63.53.81"
     port: 443
-    uuid: "/45d51389-0c38-4843-8ae8-cffb94e97a72"
+    uuid: "/c512dcbd-1847-40a2-9c99-989c8bfe4717"
     udp: true
     network: "ws"
     ws-opts:
@@ -81,8 +80,33 @@ proxies:
     reality: true
     tls: true
     servername: "itunes.apple.com"
-    public-key: "jO7THaLxz0Oz3kePAJcuwcKNTlsWoEWGh18zzRmiXgo"
-    short-id: "77c4230d"
+    public-key: "6nTROV2ELz-3vNUl0A00hp378QngpYABrPgjCpUknD0"
+    short-id: "f436f707"
+    skip-cert-verify: true
+  - name: "trojan-1853493434"
+    type: "trojan"
+    server: "4c2d5151.266nets.com"
+    port: 12019
+    password: "/bad06c3525a6eaee1757b34776b83892"
+    sni: "ixigua.com"
+    skip-cert-verify: true
+    udp: true
+  - name: "vless-1827150497"
+    type: "vless"
+    server: "154.12.38.202"
+    port: 443
+    uuid: "/2a9ab69b-26e7-44d0-a325-e5056d849900"
+    udp: true
+    network: "ws"
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: "itunes.apple.com"
+    reality: true
+    tls: true
+    servername: "itunes.apple.com"
+    public-key: "iJDZHJQcTGl2VIwbsRmlOG9JGbbmxNY5wmv1hc6OwQM"
+    short-id: "c31176b6"
     skip-cert-verify: true
   - name: "vless-1860722535"
     type: "vless"
@@ -139,17 +163,33 @@ proxies:
     short-id: "92464af018027189"
     skip-cert-verify: true
     flow: "xtls-rprx-vision"
-  - name: "vless-1868877167"
+  - name: "vless-1853976444"
     type: "vless"
-    server: "88.218.42.101"
-    port: 443
-    uuid: "/3dced3a1-6510-4c38-afce-df5fea5ba13a"
+    server: "103.180.20.108"
+    port: 8443
+    uuid: "/c1c04450-bf71-4049-ad0c-9cf6d94d9f1f"
+    udp: true
+    network: "ws"
+    ws-opts:
+      path: "/81574b6b-c9d7-44a0-b83d-dad56e8cb530"
+      headers: {}
+    tls: true
+    servername: "ty986gfazs.cainiaohub.xyz"
+    skip-cert-verify: true
+  - name: "vless-1827187990"
+    type: "vless"
+    server: "138.124.63.224"
+    port: 8444
+    uuid: "/f55e9aba-7b14-4f6f-b59a-d5b3d45c9309"
     udp: true
     network: "grpc"
     grpc-opts:
-      grpc-service-name: "grpc"
+      grpc-service-name: "GunService"
+    reality: true
     tls: true
-    servername: "league-stats.russsport.life"
+    servername: "github.com"
+    public-key: "FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0"
+    short-id: "457fab2ac885dbe0"
     skip-cert-verify: true
   - name: "vless-1864005350"
     type: "vless"
@@ -209,19 +249,6 @@ proxies:
     servername: "mother-earth.fyi"
     public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
     short-id: ""
-    skip-cert-verify: true
-    flow: "xtls-rprx-vision"
-  - name: "vless-1869127404"
-    type: "vless"
-    server: "189.74.106.114"
-    port: 443
-    uuid: "/acc89593-8200-4701-817b-c4d9727ea5a7"
-    udp: true
-    reality: true
-    tls: true
-    servername: "api.setevoypriliv.cc"
-    public-key: "r5WB5FnSCt4eeBC1FJMfkWHbzsMuabo0Rc6wuAhlZUs"
-    short-id: "a8"
     skip-cert-verify: true
     flow: "xtls-rprx-vision"
   - name: "vless-1867174739"
@@ -361,19 +388,6 @@ proxies:
       path: "/assignment"
       headers:
         Host: "www.ignitelimit.com"
-  - name: "🇨🇦CA加拿大丨yoyapai.com #1"
-    type: "trojan"
-    server: "104.18.152.225"
-    port: 443
-    password: "/humanity"
-    sni: "www.ignitelimit.com"
-    skip-cert-verify: true
-    udp: true
-    network: "ws"
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.ignitelimit.com"
   - name: "🇹🇷TR土耳其丨yoyapai.com"
     type: "trojan"
     server: "86.38.214.205"
@@ -386,7 +400,7 @@ proxies:
     ws-opts:
       path: "/assignment"
       headers: {}
-  - name: "🇨🇦CA加拿大丨yoyapai.com #2"
+  - name: "🇨🇦CA加拿大丨yoyapai.com #1"
     type: "trojan"
     server: "104.18.152.140"
     port: 443
@@ -399,7 +413,7 @@ proxies:
       path: "/assignment"
       headers:
         Host: "www.ignitelimit.com"
-  - name: "🇨🇦CA加拿大丨yoyapai.com #3"
+  - name: "🇨🇦CA加拿大丨yoyapai.com #2"
     type: "trojan"
     server: "104.16.174.117"
     port: 443
@@ -424,9 +438,9 @@ proxies:
     ws-opts:
       path: "/assignment"
       headers: {}
-  - name: "❓未知丨yoyapai.com"
+  - name: "🇧🇷BR巴西圣保罗丨yoyapai.com"
     type: "trojan"
-    server: "104.18.152.143"
+    server: "188.114.97.7"
     port: 443
     password: "/humanity"
     sni: "www.ignitelimit.com"
@@ -435,8 +449,7 @@ proxies:
     network: "ws"
     ws-opts:
       path: "/assignment"
-      headers:
-        Host: "www.ignitelimit.com"
+      headers: {}
   - name: "🇳🇴NO挪威丨yoyapai.com"
     type: "trojan"
     server: "join-telegram-channel.tirexnet.kdns.fr"
@@ -450,19 +463,7 @@ proxies:
       path: "/assignment"
       headers:
         Host: "www.ignitelimit.com"
-  - name: "🇨🇦CA加拿大丨yoyapai.com #4"
-    type: "trojan"
-    server: "104.18.152.219"
-    port: 443
-    password: "/humanity"
-    sni: "www.ignitelimit.com"
-    skip-cert-verify: true
-    udp: true
-    network: "ws"
-    ws-opts:
-      path: "/assignment"
-      headers: {}
-  - name: "🇨🇦CA加拿大丨yoyapai.com #5"
+  - name: "🇨🇦CA加拿大丨yoyapai.com #3"
     type: "trojan"
     server: "104.18.152.187"
     port: 443
@@ -486,31 +487,7 @@ proxies:
     ws-opts:
       path: "/assignment"
       headers: {}
-  - name: "🇺🇸US美国丨yoyapai.com"
-    type: "trojan"
-    server: "216.24.57.7"
-    port: 443
-    password: "/humanity"
-    sni: "www.ignitelimit.com"
-    skip-cert-verify: true
-    udp: true
-    network: "ws"
-    ws-opts:
-      path: "/assignment"
-      headers: {}
-  - name: "🇨🇦CA加拿大丨yoyapai.com #6"
-    type: "trojan"
-    server: "104.16.174.37"
-    port: 443
-    password: "/humanity"
-    sni: "www.ignitelimit.com"
-    skip-cert-verify: true
-    udp: true
-    network: "ws"
-    ws-opts:
-      path: "/assignment"
-      headers: {}
-  - name: "🇨🇦CA加拿大丨yoyapai.com #7"
+  - name: "🇨🇦CA加拿大丨yoyapai.com #4"
     type: "trojan"
     server: "104.18.152.77"
     port: 443
@@ -523,7 +500,7 @@ proxies:
       path: "/assignment"
       headers:
         Host: "www.ignitelimit.com"
-  - name: "❓未知丨yoyapai.com #1"
+  - name: "❓未知丨yoyapai.com"
     type: "trojan"
     server: "104.26.14.137"
     port: 443
@@ -732,6 +709,17 @@ proxies:
     tls: true
     servername: "t1s1.rittbo.kdns.fr"
     skip-cert-verify: true
+  - name: "🇺🇸US美國丨yoyapai.com #6"
+    type: "vless"
+    server: "18.239.134.69"
+    port: 80
+    uuid: "/f55ce6cc-3f6b-40fc-9e3b-abe26db17009"
+    udp: true
+    network: "ws"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "d2e1v87ko56lyw.cloudfront.net:assets.opensignal.com"
   - name: "美國節點丨yoyapai.com"
     type: "vless"
     server: "www.true.th"
@@ -743,17 +731,17 @@ proxies:
       path: "/"
       headers:
         Host: "d2pwbkmfr5lxa4.cloudfront.net"
-  - name: "🇺🇦烏克蘭丨yoyapai.com"
+  - name: "🇩🇪德國丨yoyapai.com"
     type: "vless"
-    server: "104.245.242.7"
+    server: "170.168.97.3"
     port: 443
-    uuid: "/e3e876aa-589e-1dcb-e55f-6ff56d8d80f4"
+    uuid: "/5e243126-4a2a-84b6-782a-73b14797fb5f"
     udp: true
     network: "xhttp"
     reality: true
     tls: true
-    servername: "cdn.steamstatic.com"
-    public-key: "3DYkxUg9fBA6cONioJOPrsklcMQEImEsurR6air4swo"
+    servername: "download.nvidia.com"
+    public-key: "D2SXHZRRYM0WcFChGWd57XB-U73aIsGfMpe2-Gq5XSs"
     short-id: ""
     skip-cert-verify: true
   - name: "🇹🇷土耳其丨yoyapai.com"
@@ -804,35 +792,7 @@ proxies:
     short-id: "825d392c67e4"
     skip-cert-verify: true
     flow: "xtls-rprx-vision"
-  - name: "🇳🇱 荷蘭丨yoyapai.com"
-    type: "vless"
-    server: "88.218.44.4"
-    port: 8443
-    uuid: "/7c74b0e4-f132-5583-4692-622a7d6b71a4"
-    udp: true
-    network: "grpc"
-    grpc-opts:
-      grpc-service-name: "TunService"
-    reality: true
-    tls: true
-    servername: "download.nvidia.com"
-    public-key: "EG3y7UktGRlzSZZ2oXT_YaO2gVP4ca3Xe6AQ0u9A5DQ"
-    short-id: ""
-    skip-cert-verify: true
-  - name: "🇳🇱 荷蘭丨yoyapai.com #1"
-    type: "vless"
-    server: "94.102.51.218"
-    port: 443
-    uuid: "/c28ee61d-0d43-4e69-8e6a-6397ed0ffc03"
-    udp: true
-    reality: true
-    tls: true
-    servername: "fair-lunar.cdn.cachefleet.com"
-    public-key: "SHDdd617KLHHb0qlQFOHepeHFl_Ch2i-K7o891uyo2M"
-    short-id: ""
-    skip-cert-verify: true
-    flow: "xtls-rprx-vision"
-  - name: "🇨🇦CA加拿大丨yoyapai.com #8"
+  - name: "🇨🇦CA加拿大丨yoyapai.com #5"
     type: "vless"
     server: "104.26.2.173"
     port: 443
@@ -929,7 +889,7 @@ proxies:
     tls: true
     servername: "rus.aba-hum.store"
     skip-cert-verify: true
-  - name: "🇨🇦CA加拿大丨yoyapai.com #9"
+  - name: "🇨🇦CA加拿大丨yoyapai.com #6"
     type: "vless"
     server: "155.46.167.30"
     port: 8880
@@ -940,7 +900,7 @@ proxies:
       path: "/"
       headers:
         Host: "vms.lifetime50.workers.dev"
-  - name: "🇨🇦CA加拿大丨yoyapai.com #10"
+  - name: "🇨🇦CA加拿大丨yoyapai.com #7"
     type: "vless"
     server: "104.21.23.72"
     port: 8880
@@ -951,7 +911,7 @@ proxies:
       path: "/pyip=ProxyIP.SG.CMLiussss.net"
       headers:
         Host: "calm-haze-d105.21-7cd.workers.dev"
-  - name: "🇨🇦CA加拿大丨yoyapai.com #11"
+  - name: "🇨🇦CA加拿大丨yoyapai.com #8"
     type: "vless"
     server: "104.21.23.72"
     port: 8880
@@ -983,17 +943,6 @@ proxies:
       path: "/eyJqdW5rIjoiQXoydFJwaWM0WSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0="
       headers:
         Host: "worker3.gigak25604.workers.dev"
-  - name: "🇹🇭 Thailand泰国丨yoyapai.com"
-    type: "vless"
-    server: "18.239.134.69"
-    port: 80
-    uuid: "/de27291c-15a9-4256-9ba7-ad517569877e"
-    udp: true
-    network: "ws"
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "d2e1v87ko56lyw.cloudfront.net:assets.opensignal.com"
   - name: "❓免費節點丨yoyapai.com"
     type: "vless"
     server: "45.40.150.4"
@@ -1005,7 +954,7 @@ proxies:
       path: "/pyip=Telegram🇨🇳++"
       headers:
         Host: "holy-breeze-0bac.47-dec.workers.dev"
-  - name: "❓未知丨yoyapai.com #2"
+  - name: "❓未知丨yoyapai.com #1"
     type: "vless"
     server: "50.62.194.30"
     port: 8880
@@ -1016,7 +965,7 @@ proxies:
       path: "/"
       headers:
         Host: "vms.lifetime37.workers.dev"
-  - name: "❓未知丨yoyapai.com #3"
+  - name: "❓未知丨yoyapai.com #2"
     type: "vless"
     server: "91.206.71.8"
     port: 80
@@ -1063,7 +1012,7 @@ proxies:
     tls: true
     servername: "ld.223350.xyz"
     skip-cert-verify: true
-  - name: "❓未知丨yoyapai.com #4"
+  - name: "❓未知丨yoyapai.com #3"
     type: "vless"
     server: "104.26.13.40"
     port: 8880
@@ -1085,7 +1034,7 @@ proxies:
       path: "/"
       headers:
         Host: "vms.lifetime39.workers.dev"
-  - name: "❓未知丨yoyapai.com #5"
+  - name: "❓未知丨yoyapai.com #4"
     type: "vless"
     server: "185.148.107.40"
     port: 8880
@@ -1103,19 +1052,6 @@ proxies:
     uuid: "/b7977b65-cfd8-4db9-a029-6ef014a4ae4a"
     udp: true
     network: "xhttp"
-  - name: "🇸🇬SG新加坡丨yoyapai.com #1"
-    type: "vless"
-    server: "154.196.139.50"
-    port: 443
-    uuid: "/423b1d79-08c4-403f-9d5e-c541f791b55f"
-    udp: true
-    reality: true
-    tls: true
-    servername: "asia.cendora.ru"
-    public-key: "eaRNeC8fccrx0nBNvBpAXZgK4m4FxfnQ-t0W7NOM7mU"
-    short-id: "e53048e82bb20077"
-    skip-cert-verify: true
-    flow: "xtls-rprx-vision"
   - name: "🇫🇮FI芬兰丨yoyapai.com"
     type: "vless"
     server: "65.109.12.58"
@@ -1130,18 +1066,6 @@ proxies:
     tls: true
     servername: "forfreeuse.rtqa.ru"
     skip-cert-verify: true
-  - name: "❓未知丨yoyapai.com #6"
-    type: "trojan"
-    server: "8.6.112.6"
-    port: 443
-    password: "/humanity"
-    sni: "www.ignitelimit.com"
-    skip-cert-verify: true
-    udp: true
-    network: "ws"
-    ws-opts:
-      path: "/assignment"
-      headers: {}
   - name: "🇯🇵JP日本丨yoyapai.com #1"
     type: "vless"
     server: "us22.sofast.live"
@@ -1158,34 +1082,7 @@ proxies:
     tls: true
     servername: "accaunt.fastly.com"
     skip-cert-verify: true
-  - name: "🇷🇺RU俄罗斯丨yoyapai.com"
-    type: "vless"
-    server: "200.165.235.78"
-    port: 443
-    uuid: "/238e492b-bc20-4380-92b6-135d39112ca4"
-    udp: true
-    reality: true
-    tls: true
-    servername: "api8.eaglors.com"
-    public-key: "Nb9IwEEhUHEbHSc6e5uYTjxDgN4ZExhDckM3OgYhj2o"
-    short-id: "52ccb3687fe0b7ec"
-    skip-cert-verify: true
-    flow: "xtls-rprx-vision"
   - name: "US美国(mibei77.com 米贝节点分享)"
-    type: "vless"
-    server: "43.174.195.1"
-    port: 443
-    uuid: "/24916ad0-847d-4522-9e17-f4347dee57fd"
-    udp: true
-    network: "ws"
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "kv.074167.xyz"
-    tls: true
-    servername: "kv.074167.xyz"
-    skip-cert-verify: true
-  - name: "US美国(mibei77.com 米贝节点分享) #1"
     type: "vless"
     server: "50.62.195.4"
     port: 80
@@ -1196,6 +1093,18 @@ proxies:
       path: "/pyip=Telegram🇨🇳+@WangCai2"
       headers:
         Host: "raspy-feather-12ec.137-257.workers.dev"
+  - name: "US美国(mibei77.com 米贝节点分享) #1"
+    type: "trojan"
+    server: "162.159.136.234"
+    port: 443
+    password: "/humanity"
+    sni: "www.ignitelimit.com"
+    skip-cert-verify: true
+    udp: true
+    network: "ws"
+    ws-opts:
+      path: "/assignment"
+      headers: {}
   - name: "US美国(mibei77.com 米贝节点分享) #2"
     type: "trojan"
     server: "130.250.137.171"
@@ -1222,19 +1131,6 @@ proxies:
       headers:
         Host: "www.ignitelimit.com"
   - name: "US美国(mibei77.com 米贝节点分享) #4"
-    type: "vless"
-    server: "core-data.gorekmas.online"
-    port: 443
-    uuid: "/4f8a1d19-4d21-47f5-816e-a8f475fbd3f7"
-    udp: true
-    reality: true
-    tls: true
-    servername: "core-data.gorekmas.online"
-    public-key: "CRh0VOb2qvDm4H89m6qiHg_9M6nnJ0f_h0kpPitA6hw"
-    short-id: "266337e69bb1f189"
-    skip-cert-verify: true
-    flow: "xtls-rprx-vision"
-  - name: "US美国(mibei77.com 米贝节点分享) #5"
     type: "trojan"
     server: "join-telegram-channel-tirexnet.trex.kdns.fr"
     port: 443
@@ -1247,7 +1143,7 @@ proxies:
       path: "/assignment"
       headers:
         Host: "www.ignitelimit.com"
-  - name: "US美国(mibei77.com 米贝节点分享) #6"
+  - name: "US美国(mibei77.com 米贝节点分享) #5"
     type: "trojan"
     server: "104.18.152.149"
     port: 443
@@ -1259,7 +1155,7 @@ proxies:
     ws-opts:
       path: "/assignment"
       headers: {}
-  - name: "US美国(mibei77.com 米贝节点分享) #7"
+  - name: "US美国(mibei77.com 米贝节点分享) #6"
     type: "trojan"
     server: "104.18.152.73"
     port: 443
@@ -1271,7 +1167,7 @@ proxies:
     ws-opts:
       path: "/assignment"
       headers: {}
-  - name: "US美国(mibei77.com 米贝节点分享) #8"
+  - name: "US美国(mibei77.com 米贝节点分享) #7"
     type: "trojan"
     server: "www.ignitelimit.com"
     port: 443
@@ -1284,7 +1180,7 @@ proxies:
       path: "/assignment"
       headers:
         Host: "www.ignitelimit.com"
-  - name: "US美国(mibei77.com 米贝节点分享) #9"
+  - name: "US美国(mibei77.com 米贝节点分享) #8"
     type: "trojan"
     server: "104.18.152.103"
     port: 443
@@ -1296,7 +1192,7 @@ proxies:
     ws-opts:
       path: "/assignment"
       headers: {}
-  - name: "US美国(mibei77.com 米贝节点分享) #10"
+  - name: "US美国(mibei77.com 米贝节点分享) #9"
     type: "trojan"
     server: "ip.myip2.qzz.io"
     port: 443
@@ -1312,24 +1208,27 @@ proxy-groups:
   - name: "自动选择"
     type: "url-test"
     proxies:
-      - "vless-1827152266"
+      - "trojan-1832863498"
+      - "trojan-1828295227"
+      - "trojan-1853338708"
       - "trojan-1864903307"
-      - "vless-1863067659"
+      - "vless-1853331624"
       - "vless-1850176813"
+      - "vless-1835128666"
       - "trojan-1853493434"
-      - "vless-1828526732"
+      - "vless-1827150497"
       - "vless-1860722535"
       - "vless-1832941217"
       - "vless-1853976457"
       - "vless-1869128716"
-      - "vless-1868877167"
+      - "vless-1853976444"
+      - "vless-1827187990"
       - "vless-1864005350"
       - "trojan-1864903312"
       - "vless-1853331553"
       - "vless-1853331483"
       - "vless-1867721680"
       - "vless-1854316327"
-      - "vless-1869127404"
       - "vless-1867174739"
       - "vless-1864005351"
       - "vless-1868600532"
@@ -1341,20 +1240,16 @@ proxy-groups:
       - "🇫🇷FR法国丨yoyapai.com"
       - "🇫🇷FR法國丨yoyapai.com"
       - "🇨🇦CA加拿大丨yoyapai.com"
-      - "🇨🇦CA加拿大丨yoyapai.com #1"
       - "🇹🇷TR土耳其丨yoyapai.com"
+      - "🇨🇦CA加拿大丨yoyapai.com #1"
       - "🇨🇦CA加拿大丨yoyapai.com #2"
-      - "🇨🇦CA加拿大丨yoyapai.com #3"
       - "🇫🇷FR法國丨yoyapai.com #1"
-      - "❓未知丨yoyapai.com"
+      - "🇧🇷BR巴西圣保罗丨yoyapai.com"
       - "🇳🇴NO挪威丨yoyapai.com"
-      - "🇨🇦CA加拿大丨yoyapai.com #4"
-      - "🇨🇦CA加拿大丨yoyapai.com #5"
+      - "🇨🇦CA加拿大丨yoyapai.com #3"
       - "🇫🇷法国丨yoyapai.com"
-      - "🇺🇸US美国丨yoyapai.com"
-      - "🇨🇦CA加拿大丨yoyapai.com #6"
-      - "🇨🇦CA加拿大丨yoyapai.com #7"
-      - "❓未知丨yoyapai.com #1"
+      - "🇨🇦CA加拿大丨yoyapai.com #4"
+      - "❓未知丨yoyapai.com"
       - "🇺🇸US美國丨yoyapai.com #1"
       - "🇺🇸 US美國丨yoyapai.com"
       - "🇺🇸US美國丨yoyapai.com #2"
@@ -1369,15 +1264,14 @@ proxy-groups:
       - "CA加拿大丨yoyapai.com"
       - "FR法國丨yoyapai.com #5"
       - "FR法國丨yoyapai.com #6"
+      - "🇺🇸US美國丨yoyapai.com #6"
       - "美國節點丨yoyapai.com"
-      - "🇺🇦烏克蘭丨yoyapai.com"
+      - "🇩🇪德國丨yoyapai.com"
       - "🇹🇷土耳其丨yoyapai.com"
       - "🇮🇷_IR伊朗丨yoyapai.com"
       - "🇺🇸_US美國丨yoyapai.com"
       - "🇯🇵JP日本丨yoyapai.com"
-      - "🇳🇱 荷蘭丨yoyapai.com"
-      - "🇳🇱 荷蘭丨yoyapai.com #1"
-      - "🇨🇦CA加拿大丨yoyapai.com #8"
+      - "🇨🇦CA加拿大丨yoyapai.com #5"
       - "🇨🇦加拿大丨yoyapai.com"
       - "🇨🇦加拿大丨yoyapai.com #1"
       - "🇨🇦加拿大丨yoyapai.com #2"
@@ -1387,28 +1281,24 @@ proxy-groups:
       - "🇺🇸美國丨yoyapai.com"
       - "🇩🇪德国丨yoyapai.com"
       - "🇷🇺俄罗斯丨yoyapai.com"
-      - "🇨🇦CA加拿大丨yoyapai.com #9"
-      - "🇨🇦CA加拿大丨yoyapai.com #10"
-      - "🇨🇦CA加拿大丨yoyapai.com #11"
+      - "🇨🇦CA加拿大丨yoyapai.com #6"
+      - "🇨🇦CA加拿大丨yoyapai.com #7"
+      - "🇨🇦CA加拿大丨yoyapai.com #8"
       - "🇫🇷 法国丨yoyapai.com"
       - "🇮🇷 IR伊朗丨yoyapai.com"
-      - "🇹🇭 Thailand泰国丨yoyapai.com"
       - "❓免費節點丨yoyapai.com"
+      - "❓未知丨yoyapai.com #1"
       - "❓未知丨yoyapai.com #2"
-      - "❓未知丨yoyapai.com #3"
       - "🗽🇺🇸美國CloudFlare节点丨yoyapai.com"
       - "🇫🇷法國丨yoyapai.com"
       - "🇫🇷FR法國丨yoyapai.com #2"
-      - "❓未知丨yoyapai.com #4"
+      - "❓未知丨yoyapai.com #3"
       - "🇸🇬SG新加坡丨yoyapai.com"
-      - "❓未知丨yoyapai.com #5"
+      - "❓未知丨yoyapai.com #4"
       - "🇩🇪DE德国丨yoyapai.com"
-      - "🇸🇬SG新加坡丨yoyapai.com #1"
       - "🇫🇮FI芬兰丨yoyapai.com"
-      - "❓未知丨yoyapai.com #6"
       - "🇯🇵JP日本丨yoyapai.com #1"
       - "🇩🇪DE德国丨yoyapai.com #1"
-      - "🇷🇺RU俄罗斯丨yoyapai.com"
       - "US美国(mibei77.com 米贝节点分享)"
       - "US美国(mibei77.com 米贝节点分享) #1"
       - "US美国(mibei77.com 米贝节点分享) #2"
@@ -1419,31 +1309,33 @@ proxy-groups:
       - "US美国(mibei77.com 米贝节点分享) #7"
       - "US美国(mibei77.com 米贝节点分享) #8"
       - "US美国(mibei77.com 米贝节点分享) #9"
-      - "US美国(mibei77.com 米贝节点分享) #10"
     url: "https://www.gstatic.com/generate_204"
     interval: 300
   - name: "节点选择"
     type: "select"
     proxies:
       - "自动选择"
-      - "vless-1827152266"
+      - "trojan-1832863498"
+      - "trojan-1828295227"
+      - "trojan-1853338708"
       - "trojan-1864903307"
-      - "vless-1863067659"
+      - "vless-1853331624"
       - "vless-1850176813"
+      - "vless-1835128666"
       - "trojan-1853493434"
-      - "vless-1828526732"
+      - "vless-1827150497"
       - "vless-1860722535"
       - "vless-1832941217"
       - "vless-1853976457"
       - "vless-1869128716"
-      - "vless-1868877167"
+      - "vless-1853976444"
+      - "vless-1827187990"
       - "vless-1864005350"
       - "trojan-1864903312"
       - "vless-1853331553"
       - "vless-1853331483"
       - "vless-1867721680"
       - "vless-1854316327"
-      - "vless-1869127404"
       - "vless-1867174739"
       - "vless-1864005351"
       - "vless-1868600532"
@@ -1455,20 +1347,16 @@ proxy-groups:
       - "🇫🇷FR法国丨yoyapai.com"
       - "🇫🇷FR法國丨yoyapai.com"
       - "🇨🇦CA加拿大丨yoyapai.com"
-      - "🇨🇦CA加拿大丨yoyapai.com #1"
       - "🇹🇷TR土耳其丨yoyapai.com"
+      - "🇨🇦CA加拿大丨yoyapai.com #1"
       - "🇨🇦CA加拿大丨yoyapai.com #2"
-      - "🇨🇦CA加拿大丨yoyapai.com #3"
       - "🇫🇷FR法國丨yoyapai.com #1"
-      - "❓未知丨yoyapai.com"
+      - "🇧🇷BR巴西圣保罗丨yoyapai.com"
       - "🇳🇴NO挪威丨yoyapai.com"
-      - "🇨🇦CA加拿大丨yoyapai.com #4"
-      - "🇨🇦CA加拿大丨yoyapai.com #5"
+      - "🇨🇦CA加拿大丨yoyapai.com #3"
       - "🇫🇷法国丨yoyapai.com"
-      - "🇺🇸US美国丨yoyapai.com"
-      - "🇨🇦CA加拿大丨yoyapai.com #6"
-      - "🇨🇦CA加拿大丨yoyapai.com #7"
-      - "❓未知丨yoyapai.com #1"
+      - "🇨🇦CA加拿大丨yoyapai.com #4"
+      - "❓未知丨yoyapai.com"
       - "🇺🇸US美國丨yoyapai.com #1"
       - "🇺🇸 US美國丨yoyapai.com"
       - "🇺🇸US美國丨yoyapai.com #2"
@@ -1483,15 +1371,14 @@ proxy-groups:
       - "CA加拿大丨yoyapai.com"
       - "FR法國丨yoyapai.com #5"
       - "FR法國丨yoyapai.com #6"
+      - "🇺🇸US美國丨yoyapai.com #6"
       - "美國節點丨yoyapai.com"
-      - "🇺🇦烏克蘭丨yoyapai.com"
+      - "🇩🇪德國丨yoyapai.com"
       - "🇹🇷土耳其丨yoyapai.com"
       - "🇮🇷_IR伊朗丨yoyapai.com"
       - "🇺🇸_US美國丨yoyapai.com"
       - "🇯🇵JP日本丨yoyapai.com"
-      - "🇳🇱 荷蘭丨yoyapai.com"
-      - "🇳🇱 荷蘭丨yoyapai.com #1"
-      - "🇨🇦CA加拿大丨yoyapai.com #8"
+      - "🇨🇦CA加拿大丨yoyapai.com #5"
       - "🇨🇦加拿大丨yoyapai.com"
       - "🇨🇦加拿大丨yoyapai.com #1"
       - "🇨🇦加拿大丨yoyapai.com #2"
@@ -1501,28 +1388,24 @@ proxy-groups:
       - "🇺🇸美國丨yoyapai.com"
       - "🇩🇪德国丨yoyapai.com"
       - "🇷🇺俄罗斯丨yoyapai.com"
-      - "🇨🇦CA加拿大丨yoyapai.com #9"
-      - "🇨🇦CA加拿大丨yoyapai.com #10"
-      - "🇨🇦CA加拿大丨yoyapai.com #11"
+      - "🇨🇦CA加拿大丨yoyapai.com #6"
+      - "🇨🇦CA加拿大丨yoyapai.com #7"
+      - "🇨🇦CA加拿大丨yoyapai.com #8"
       - "🇫🇷 法国丨yoyapai.com"
       - "🇮🇷 IR伊朗丨yoyapai.com"
-      - "🇹🇭 Thailand泰国丨yoyapai.com"
       - "❓免費節點丨yoyapai.com"
+      - "❓未知丨yoyapai.com #1"
       - "❓未知丨yoyapai.com #2"
-      - "❓未知丨yoyapai.com #3"
       - "🗽🇺🇸美國CloudFlare节点丨yoyapai.com"
       - "🇫🇷法國丨yoyapai.com"
       - "🇫🇷FR法國丨yoyapai.com #2"
-      - "❓未知丨yoyapai.com #4"
+      - "❓未知丨yoyapai.com #3"
       - "🇸🇬SG新加坡丨yoyapai.com"
-      - "❓未知丨yoyapai.com #5"
+      - "❓未知丨yoyapai.com #4"
       - "🇩🇪DE德国丨yoyapai.com"
-      - "🇸🇬SG新加坡丨yoyapai.com #1"
       - "🇫🇮FI芬兰丨yoyapai.com"
-      - "❓未知丨yoyapai.com #6"
       - "🇯🇵JP日本丨yoyapai.com #1"
       - "🇩🇪DE德国丨yoyapai.com #1"
-      - "🇷🇺RU俄罗斯丨yoyapai.com"
       - "US美国(mibei77.com 米贝节点分享)"
       - "US美国(mibei77.com 米贝节点分享) #1"
       - "US美国(mibei77.com 米贝节点分享) #2"
@@ -1533,7 +1416,6 @@ proxy-groups:
       - "US美国(mibei77.com 米贝节点分享) #7"
       - "US美国(mibei77.com 米贝节点分享) #8"
       - "US美国(mibei77.com 米贝节点分享) #9"
-      - "US美国(mibei77.com 米贝节点分享) #10"
       - "DIRECT"
 rules:
   - "GEOSITE,private,DIRECT"
